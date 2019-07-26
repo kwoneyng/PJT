@@ -8,6 +8,7 @@ with open('boxoffice.csv', 'r', newline='', encoding='utf-8') as f:
     reader = csv.DictReader(f)
     all_movie = {}
     for row in reader:
+        print(row)
         movieCd = row['movieCd']
 
         key = config('API_KEY')
